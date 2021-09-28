@@ -1,0 +1,60 @@
+:root {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: white;
+    padding: 15px;
+}
+nav {
+    padding: 0 15px;
+    background-color: white;
+}
+
+/* div.name a {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 8px;
+    margin-right: 50px;
+    position: relative;
+}
+
+div.name a:hover {
+    background-color: transparent;
+} */
+
+/*Basic Styling*/
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.logo {
+    font-size: 20px;
+    padding: 7.5px 10px 7.5px 0px;
+}
+
+.item {
+    padding: 10px;
+}
+
+.item a:hover, .item a:hover::after{
+    background-color: lightgray;
+}
+
+@media only screen and (max-width: 1000px) {
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        flex-direction: column;
+    }
+}
