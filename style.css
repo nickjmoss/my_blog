@@ -1,30 +1,72 @@
 :root {
     font-family: 'Courier New', Courier, monospace;
     background-color: white;
-    padding: 15px;
+    padding: 0px;
+    
 }
+.background-image {
+    background-image: url("images/background.png");
+    background-repeat: no-repeat;
+    height: 500px;
+    position: relative;
+    display: flex;
+
+}
+
+.grid {
+    display: grid;
+    max-width: 800px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+}
+
+.grid-item{
+    display: flex;
+    max-width: 80%;
+    justify-content: space-around;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
 nav {
     padding: 0 15px;
     background-color: white;
 }
 
-/* div.name a {
-    font-weight: bold;
-    font-size: 20px;
-    margin-top: 8px;
-    margin-right: 50px;
-    position: relative;
-}
-
-div.name a:hover {
-    background-color: transparent;
-} */
-
-/*Basic Styling*/
-
 a{
     text-decoration: none;
     color: black;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 40px;
+    background-color: white;
+}
+
+.center{
+    background-color: transparent; 
+    width:100%;
+    max-width: 800px;
+    max-height: 800px; 
+    margin:0 auto;
+    display:flex;
+    padding: 40px 40px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-bottom: 0px;
+}
+
+.picture {
+    max-width: 100%;
+    margin: 0 0;
+    padding: 0;
 }
 
 .menu {
@@ -33,6 +75,7 @@ a{
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    background-color: white;
 }
 
 .logo {
@@ -56,5 +99,6 @@ a{
         align-items: center;
         list-style: none;
         flex-direction: column;
+        padding: 0px;
     }
 }
