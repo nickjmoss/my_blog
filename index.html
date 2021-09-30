@@ -9,7 +9,13 @@
 <body>
     <script src="script.js"></script>
     <main>
-        <div class="container">
+        <div id="modal" class="modal-container">
+            <div id=model-content class="content">
+                <span id="closer" class="close">&times;</span>
+                <img src="images/me-wife.jpg" class="modal-image">
+            </div>
+        </div>
+        <div class="nav-container">
             <nav>
                 <ul class="menu">
                     <li class="logo"><a href='index.html'>Nick J Moss</a></li>
@@ -23,10 +29,13 @@
         </div>
         <section class="background-image">
             <div class="center">
-                <h1 style="color: white;">
-                    This is a paragraph of text
-                    that is being used as a placeholder
-                </h1>
+                <div>
+                    <h1 style="color: white;">
+                        Hi! My name is Nick and I am an aspiring full-stack developer!
+                        Thanks for visiting my blog, feel free to check it out!
+                    </h1>
+                </div>
+                <button id="button" class="popupbtn"><img src="images/me-wife.jpg" class='home-image'></button>
             </div>
         </section>
         <section class="container">

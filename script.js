@@ -1,17 +1,13 @@
-const toggle = document.querySelector(".toggle");
-const menu = document.querySelector(".menu");
+window.onload = function() {    
+    let modal = document.getElementById("modal");
+    let button = document.getElementById("button");
+    let close = document.getElementById("closer");
 
-//Toggle mobile menu
-function toggleMenu() {
-    if (menu.classList.contains("active")) {
-        menu.classList.remove("active");
-
-        toggle.querySelector("a").innerHTML  = "<i class='fa fas-bars'></i>"
-    } else {
-        menu.classList.add("active");
-
-        toggle.querySelector("a").innerHTML = "<i class='fa fas-times'></i>"
+    button.onclick = function() {
+        modal.style.display = 'block';
     }
- }
 
- toggle.addEventListener("click", toggleMenu, false);
+    close.onclick = function () {
+        modal.style.display = 'none';
+    }
+}
