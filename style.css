@@ -1,16 +1,76 @@
 :root {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "montserrat";
     background-color: white;
     padding: 0px;
     
 }
+/* Container Styling */
+.container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 40px;
+    background-color: white;
+}
+/* Menu Styling */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    background-color: white;
+    padding-left: 0px;
+}
+
+.logo {
+    font-size: 20px;
+    margin: auto 10px;
+}
+
+.menu-item-container {
+    width: 70%;
+}
+
+.menu-item {
+    padding: 5px 10px;
+}
+
+.menu-item a:hover, .menu-item a:hover::after{
+    background-color: lightgray;
+}
+
+nav {
+    background-color: white;
+}
+
+.nav-container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*---------------------------------------------*/
+
+/* My background image*/
 .background-image {
     background-image: url("images/background.png");
     background-repeat: no-repeat;
-    height: 500px;
+    height: 350px;
     position: relative;
     display: flex;
+}
 
+.home-intro {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    background-color: transparent;
+    color: white;
 }
 
 .modal-container {
@@ -78,28 +138,13 @@ body{
     padding: 0px;
 }
 
-nav {
-    background-color: white;
-}
-
 a{
     text-decoration: none;
     color: black;
 }
 
-.container {
-    max-width: 800px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0px 40px;
-    background-color: white;
-}
-
-.nav-container {
-    max-width: 800px;
-    width: 100%;
-    margin: 0 auto;
-    background-color: white;
+strong {
+    font-family: "montserrat-bold";
 }
 
 .center{
@@ -129,29 +174,6 @@ a{
     cursor: pointer;
 }
 
-.menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    background-color: white;
-    padding: 0px;
-}
-
-.logo {
-    font-size: 20px;
-    padding: 7.5px 10px 7.5px 0px;
-}
-
-.item {
-    padding: 10px;
-}
-
-.item a:hover, .item a:hover::after{
-    background-color: lightgray;
-}
-
 @media only screen and (max-width: 1000px) {
     .menu {
         display: flex;
@@ -162,4 +184,14 @@ a{
         flex-direction: column;
         padding: 0px;
     }
+}
+
+@font-face {
+    font-family: "montserrat";
+    src: url(fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "montserrat-bold";
+    src: url(fonts/Montserrat/Montserrat-Bold.ttf);
 }
