@@ -2,15 +2,16 @@
     font-family: "montserrat";
     background-color: white;
     padding: 0px;
-    
+    line-height: 2;
 }
 /* Container Styling */
 .container {
     max-width: 800px;
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
     padding: 0px 40px;
     background-color: white;
+    overflow: auto;
 }
 /* Menu Styling */
 .menu {
@@ -147,6 +148,11 @@ strong {
     font-family: "montserrat-bold";
 }
 
+.links:hover {
+    color: black;
+    text-decoration: underline;
+}
+
 .center{
     background-color: transparent; 
     width:100%;
@@ -172,6 +178,67 @@ strong {
     border: none;
     background: none;
     cursor: pointer;
+}
+
+.myfooter {
+    background-color: transparent;
+    width: 50%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.74);
+    display: flex;
+    color: white;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.footer-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    background-color: transparent;
+    padding-left: 0px;
+    max-width: 800px;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 18px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+
+.fa:hover {
+opacity: 0.7;
+}
+
+.fa-instagram {
+    color: #fff;
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-twitter {
+background: #55ACEE;
+color: white;
 }
 
 @media only screen and (max-width: 1000px) {
