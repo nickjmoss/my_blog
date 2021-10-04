@@ -4,10 +4,36 @@
     padding: 0px;
     line-height: 2;
 }
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+    text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+    color: black;
+}
+
+nav {
+    background-color: white;
+}
+
+strong {
+    font-family: "montserrat-bold";
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.74);
+    display: flex;
+    color: white;
+    margin: 0 auto;
+    height: 100%;
+}
+
 /* Container Styling */
 .container {
     max-width: 800px;
-    width: 80%;
     margin: 0 auto;
     padding: 0px 40px;
     background-color: white;
@@ -35,14 +61,6 @@
 
 .menu-item {
     padding: 5px 10px;
-}
-
-.menu-item a:hover, .menu-item a:hover::after{
-    background-color: lightgray;
-}
-
-nav {
-    background-color: white;
 }
 
 .nav-container {
@@ -73,6 +91,10 @@ nav {
     background-color: transparent;
     color: white;
 }
+
+/*---------------------------------------------*/
+
+/* Modal */
 
 .modal-container {
     display: none;
@@ -116,83 +138,61 @@ text-decoration: none;
 cursor: pointer;
 }
 
-.home-image {
-    height: 480px;
-    padding-left: 5px;
-}
+/* ----------------------------------- */
 
-.grid {
+/* Home Grid/Recent Blog Posts */
+.home-grid {
     display: grid;
     max-width: 800px;
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-around;
+    grid-gap: 50px;
 }
 
 .grid-item{
     display: flex;
+    flex-direction: column;
     max-width: 80%;
     justify-content: space-around;
+    padding: 0px 15px;
+    border: 1px solid black;
+    box-shadow: 5px 5px gray;
+    margin: 5px auto;
 }
 
-body{
-    margin: 0px;
-    padding: 0px;
-}
 
-a{
-    text-decoration: none;
+/* ----------------------------------- */
+
+.links{
+    display: inline-block;
+    position: relative;
     color: black;
 }
 
-strong {
-    font-family: "montserrat-bold";
+.links:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 200ms ease-out;
 }
 
-.links:hover {
-    color: black;
-    text-decoration: underline;
+.links:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
-.center{
-    background-color: transparent; 
-    width:100%;
-    max-width: 800px;
-    max-height: 800px; 
-    margin:0 auto;
-    display:flex;
-    padding: 0px 40px;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    padding-bottom: 0px;
-}
-
-.picture {
-    max-width: 100%;
-    margin: 0 0;
-    padding: 0;
-}
-
-.popupbtn {
-    padding: 0px;
-    border: none;
-    background: none;
-    cursor: pointer;
-}
-
+/* Footer Styling */
 .myfooter {
     background-color: transparent;
     width: 50%;
     max-width: 800px;
     margin: 0 auto;
-}
-
-footer {
-    background-color: rgba(0, 0, 0, 0.74);
-    display: flex;
-    color: white;
-    margin: 0 auto;
-    height: 100%;
 }
 
 .footer-menu {
@@ -240,6 +240,10 @@ opacity: 0.7;
 background: #55ACEE;
 color: white;
 }
+
+/* --------------------------------- */
+
+/* Media and Font Rules */
 
 @media only screen and (max-width: 1000px) {
     .menu {
