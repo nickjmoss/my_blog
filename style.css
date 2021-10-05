@@ -206,54 +206,78 @@ cursor: pointer;
     max-width: 800px;
 }
 
-.fa {
-    padding: 10px;
-    font-size: 30px;
-    width: 18px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-  }
-
-.fa:hover {
+.fab:hover {
 opacity: 0.7;
 }
 
-.fa-instagram {
-    color: #fff;
-    background: #d6249f;
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+.instagram:hover {
+    fill: url(#rg)
 }
 
-.fa-facebook {
-    background: #3B5998;
-    color: white;
+.facebook:hover {
+    background-color: #3B5998;
+    fill: white;
 }
 
-.fa-linkedin {
-    background: #007bb5;
-    color: white;
+.twitter:hover {
+    fill: #55ACEE;
 }
 
-.fa-twitter {
-background: #55ACEE;
-color: white;
+.linkedin:hover {
+    fill: white;
+    background-color: #007bb5;
 }
 
 /* --------------------------------- */
 
 /* Media and Font Rules */
 
+/* Mobile Menu */
+.mobile-menu {
+    display: none;
+    border: none;
+    background-color: transparent;
+}
+
+.menu-button {
+    background-color: transparent;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.menu-button:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+.fa-bars {
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+}
+
+
 @media only screen and (max-width: 1000px) {
     .menu {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        list-style: none;
-        flex-direction: column;
-        padding: 0px;
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .links{
+        display: inline;
+        text-decoration: underline;
+    }
+
+    .links:after {
+        all: initial;
+    }
+
+    .links:hover:after {
+        all: initial;
     }
 }
 
