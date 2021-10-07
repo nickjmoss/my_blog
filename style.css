@@ -382,13 +382,14 @@ opacity: 0.7;
     justify-content: center;
 }
 
+/* Laptop Styling */
 @media only screen and (max-width: 1024px) {
     .logo {
         padding-left: 30px;
     }
 }
 
-
+/* Tablet Styling */
 @media only screen and (max-width: 768px) {
     body{
         font-size: 1.6rem;
@@ -419,8 +420,20 @@ opacity: 0.7;
         display: flex;
         margin: 0 auto;
     }
-}
 
+    .footer-menu {
+        margin: auto auto 2em auto;
+    }
+
+    .footer-menu > p {
+        margin: 0 auto;
+    }
+
+    .footer-menu > h3 {
+        margin-bottom: 1em;
+    }
+}
+/* Mobile Styling */
 /* @media only screen and (max-width: 900px) {
     body{
         font-size: 1.6rem;
