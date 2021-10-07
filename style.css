@@ -395,6 +395,16 @@ opacity: 0.7;
     section .container {
         padding: 15px;
     }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-grid {
+        display: flex;
+        flex-direction: column;
+    }
     .menu {
         display: none;
     }
