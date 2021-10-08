@@ -66,6 +66,7 @@ footer {
 .logo {
     font-size: 20px;
     margin: auto 10px auto 0px;
+    text-decoration: none;
 }
 
 .menu-item-container {
