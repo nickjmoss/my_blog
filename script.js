@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function toggleMenuIcon() {
         button.classList.toggle("active");
+        modal.classList.toggle("activeModal");
+        body.classList.toggle("noScroll");
     }
 
     button.addEventListener("click", toggleMenuIcon);
