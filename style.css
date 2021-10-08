@@ -12,6 +12,16 @@ body{
     font-size: 1.0rem;
 }
 
+#home-intro {
+    border-radius: 10px 10px 0px 0px;
+}
+
+.home {
+    background-image: url("images/background-1.png");
+    background-repeat: no-repeat;
+    height: 600px;
+}
+
 a{
     text-decoration: underline 0.15em rgba(0, 0, 0, 0);
     color: black;
@@ -59,7 +69,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    background-color: white;
+    background-color: transparent;
     padding-right: 40px;
 }
 
@@ -70,6 +80,7 @@ footer {
 
 .logo a{
     text-decoration: none;
+    color: white;
 }
 
 .menu-item-container {
@@ -80,25 +91,25 @@ footer {
     padding: 5px 10px;
 }
 
+.menu .links {
+    color: white;
+}
+
+.menu .links:after {
+    background-color: white;
+}
+
 .nav-container {
     max-width: 1000px;
     width: 100%;
     margin: 0 auto;
-    background-color: white;
+    background-color: transparent;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
 /*---------------------------------------------*/
-
-/* My background image*/
-.background-image {
-    background-image: url("images/background.png");
-    background-repeat: no-repeat;
-    height: 350px;
-    display: flex;
-}
 
 .home-intro {
     display: flex;
@@ -230,7 +241,7 @@ cursor: pointer;
     background-color: transparent;
     /* padding: 0px 30px; */
     max-width: 800px;
-    grid-area: 1/3/3/5;
+    grid-area: 1/2/3/5;
     flex-direction: column;
 }
 
@@ -260,7 +271,7 @@ cursor: pointer;
 .sitemap {
     display: flex;
     flex-direction: column;
-    grid-area: 1/9/2/10;
+    grid-area: 1/10/2/11;
 }
 
 .contact {
@@ -272,7 +283,7 @@ cursor: pointer;
 .general {
     display: flex;
     flex-direction: column;
-    grid-area: 2/6/3/8;
+    grid-area: 2/6/3/9;
 }
 
 .sitemap > h3,
@@ -363,6 +374,7 @@ svg {
 
 .menu-modal-container {
     display: none;
+    position: fixed;
     background-color: white;
     flex-direction: column;
     width: 100%;
@@ -456,7 +468,7 @@ svg {
     .menu-icon > span {
         width: 35px;
         height: 3px;
-        background-color: black;
+        background-color: white;
         display: block;
         transition: all 0.3s ease-in-out;
     }
@@ -464,15 +476,18 @@ svg {
     .menu-icon.active span:nth-child(1){
         transform-origin: center center;
         transform: rotate(-45deg) translate(-12px, 7.25px);
+        background-color: black;
     }
 
     .menu-icon.active span:nth-child(2) {
+        background-color: black;
         opacity: 0;
     }
     
     .menu-icon.active span:nth-child(3) {
         transform-origin: center center;
         transform: rotate(45deg) translate(-12px, -7.25px);
+        background-color: black;
     }
 
     .activeModal {
