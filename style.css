@@ -392,6 +392,7 @@ svg {
 
 .mobile-menu > li {
     padding: 10px;
+    text-decoration: none;
 }
 
 /* Laptop Styling */
