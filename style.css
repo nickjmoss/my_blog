@@ -390,8 +390,11 @@ svg {
     padding-left:  0;
 }
 
-.mobile-menu > li {
+.mobile-menu li {
     padding: 10px;
+}
+
+.mobile-menu a{
     text-decoration: none;
 }
 
