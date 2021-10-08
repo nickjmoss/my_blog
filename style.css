@@ -66,6 +66,9 @@ footer {
 .logo {
     font-size: 20px;
     margin: auto 10px auto 0px;
+}
+
+.logo a{
     text-decoration: none;
 }
 
