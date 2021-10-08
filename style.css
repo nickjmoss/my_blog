@@ -432,14 +432,14 @@ svg {
     .menu-icon {
         display: grid;
         place-items: center;
-        height: 55px;
+        height: 40px;
         width: 50px;
         cursor: pointer;
         position: relative;
     }
 
     .menu-icon > span {
-        width: 50px;
+        width: 35px;
         height: 3px;
         background-color: black;
         display: block;
@@ -448,8 +448,7 @@ svg {
 
     .menu-icon.active span:nth-child(1){
         transform-origin: center center;
-        transform: rotate(-45deg) translate(-12px, 14px);
-        width: 55px;
+        transform: rotate(-45deg) translate(-12px, 7.25px);
     }
 
     .menu-icon.active span:nth-child(2) {
@@ -458,8 +457,7 @@ svg {
     
     .menu-icon.active span:nth-child(3) {
         transform-origin: center center;
-        transform: rotate(45deg) translate(-12px, -14px);
-        width: 55px;
+        transform: rotate(45deg) translate(-12px, -7.25px);
     }
 
     .footer-menu {
