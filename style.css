@@ -387,6 +387,11 @@ svg {
 .mobile-menu {
     list-style: none;
     justify-content: center;
+    padding-left:  0;
+}
+
+.mobile-menu > li {
+    padding: 10px;
 }
 
 /* Laptop Styling */
