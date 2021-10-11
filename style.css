@@ -213,11 +213,11 @@ footer {
     align-items: center;
 }
 
-.arrow-container:hover .arrow{
+.more-info:hover .arrow{
     color: black;
 }
 
-.arrow-container:hover {
+.more-info:hover .arrow-container {
     background-color: white;
 }
 
