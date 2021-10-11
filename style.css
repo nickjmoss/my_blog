@@ -28,11 +28,11 @@ a{
 }
 
 h1 {
-    font-size: 1.75em;
+    font-size: 1.9rem;
 }
 
 h2 {
-    font-size: 1.6em;
+    font-size: 1.7em;
 }
 
 h3 {
@@ -114,12 +114,13 @@ footer {
 .landing-container {
     max-width: 1000px;
     margin: 0 auto;
-    overflow: auto;
+    /* overflow: auto; */
     background-color: transparent;
     display: flex;
     align-items: center;
     height: 50%;
     padding: 5%;
+    overflow: hidden;
 }
 
 .landing-intro{
@@ -128,7 +129,6 @@ footer {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 35%;
 }
 
 .landing-intro h1 {
@@ -156,6 +156,7 @@ footer {
     border-radius: 30px;
     padding: 3%;
     transition: all 0.3s;
+    display: block;
 }
 
 .landing-button:hover {
@@ -171,12 +172,18 @@ footer {
     color: white;
     margin: 0 auto;
     justify-content: space-between;
+    padding: 5%;
 }
 
 .more-info {
     display: flex;
     flex-direction: row;
-    width: 50%;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.more-info span {
+    color: white;    
 }
 
 .arrow {
@@ -198,7 +205,12 @@ footer {
 }
 
 .more-info a{
-    margin: 0 2% 0 0;
+    /* margin: 0 2% 0 0; */
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* justify-content: center; */
+    align-items: center;
 }
 
 .arrow-container:hover .arrow{
@@ -363,6 +375,7 @@ cursor: pointer;
 .footer-social {
     justify-content: space-between;
     display: flex;
+    padding: 5% 0;
 }
 
 .sitemap {
@@ -516,6 +529,16 @@ svg {
     .logo {
         padding-left: 30px;
     }
+    .landing-button-container {
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    .landing-button {
+        margin: 5% 0;
+    }
 }
 
 /* Tablet Styling */
@@ -532,6 +555,7 @@ svg {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding: 5%;
     }
 
     .home-grid {
@@ -539,6 +563,10 @@ svg {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    #grid-item-4, #grid-item-5, #grid-item-6 {
+        display: none;
     }
 
     .menu-item-container {
@@ -595,8 +623,37 @@ svg {
         overflow: hidden;
     }
 
+    .landing-container {
+        justify-content: center;
+    }
+
+    .more-info-container {
+        justify-content: center;
+    }
+    .landing-button-container {
+        justify-content: center;
+    }
+
+    .more-info {
+        justify-content: center;
+    }
+
+    .more-info  span {
+        font-size: 1.0rem;
+        color: white;
+    }
+
+    .more-info a {
+        justify-content: center;
+    }
+
+    .arrow-container {
+        width: 45px;
+        height: 45px;
+    }
+
     .footer-menu {
-        margin: auto auto 2em auto;
+        margin: auto auto 15% auto;
     }
 
     .footer-menu > p {
