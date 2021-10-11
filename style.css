@@ -111,6 +111,104 @@ footer {
 
 /*---------------------------------------------*/
 
+.landing-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: auto;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    height: 50%;
+    padding: 5%;
+}
+
+.landing-intro{
+    background-color: transparent;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 35%;
+}
+
+.landing-intro h1 {
+    font-size: 4rem;
+    font-family: 'montserrat-extra-bold';
+    margin: 0;
+}
+
+.landing-intro p {
+    font-size: 1.0rem;
+}
+
+.landing-button-container {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10% 0;
+}
+
+.landing-button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 3%;
+    transition: all 0.3s;
+}
+
+.landing-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.more-info-container {
+    display: flex;
+    flex-direction: row;
+    bottom: 0;
+    max-width: 1000px;
+    color: white;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.more-info {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+
+.arrow {
+    color: white;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.arrow-container {
+    margin: 0 2% 0 0;
+    width: 30px;
+    height: 30px;
+    border: 1px white solid;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.more-info a{
+    margin: 0 2% 0 0;
+}
+
+.arrow-container:hover .arrow{
+    color: black;
+}
+
+.arrow-container:hover {
+    background-color: white;
+}
+
 .home-intro {
     display: flex;
     align-items: center;
@@ -572,4 +670,9 @@ svg {
 @font-face {
     font-family: "montserrat-bold";
     src: url(fonts/Montserrat/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: "montserrat-extra-bold";
+    src: url(fonts/Montserrat/Montserrat-ExtraBold.ttf);
 }
