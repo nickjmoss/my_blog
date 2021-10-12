@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function showHideSection() {
         icon.classList.toggle("fa-rotate-90");
-        section.classList.toggle=(".hide-section");
+        section.classList.toggle=("hide-section");
     }
     sectionArrow.addEventListener("click", showHideSection);
     button.addEventListener("click", toggleMenuIcon);
