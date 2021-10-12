@@ -593,6 +593,10 @@ svg {
         font-size: 1.3em;
     }
 
+    .links, a{
+        text-decoration: none;
+    }
+
     .mobile-menu-button {
         display: flex;
     }
