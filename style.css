@@ -252,6 +252,10 @@ footer {
     opacity: 0.7;
     cursor: pointer;
 }
+
+.hide-section {
+    display: none;
+}
 /*---------------------------------------------*/
 
 /* Modal */

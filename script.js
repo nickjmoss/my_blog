@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let body = document.querySelector("body");
     let sectionArrow = document.getElementById("section-arrow");
     let icon = document.getElementById("icon");
+    let section = document.getElementById("recent-posts")
 
 
     function toggleMenuIcon() {
@@ -15,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function showHideSection() {
         icon.classList.toggle("fa-rotate-90");
+        section.classList.toggle=(".hide-section");
     }
     sectionArrow.addEventListener("click", showHideSection);
     button.addEventListener("click", toggleMenuIcon);
