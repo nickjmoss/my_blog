@@ -236,19 +236,24 @@ footer {
 
 }
 
-.icon-container svg{
-    width: 50px;
-    height: 50px;
-}
-
 .fa-angle-right {
     position: relative;
+    transition: all 0.3s;
+}
+
+.fa-angle-right:hover {
+    opacity: 0.7;
+}
+
+.icon-container .active i{
+    transform: rotate(90deg);
 }
 
 .icon-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 2rem;
 }
 /*---------------------------------------------*/
 

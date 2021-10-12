@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", function() {
     let button = document.getElementById("menu-icon");
     let close = document.getElementById("close");
     let body = document.querySelector("body");
+    let sectionArrow = document.getElementById("section-arrow");
+
 
     function toggleMenuIcon() {
         button.classList.toggle("active");
@@ -10,5 +12,9 @@ document.addEventListener("DOMContentLoaded", function() {
         body.classList.toggle("noScroll");
     }
 
+    function showHideSection() {
+        sectionArrow.classList.toggle("active");
+    }
+    sectionArrow.addEventListener("click", showHideSection);
     button.addEventListener("click", toggleMenuIcon);
 })
