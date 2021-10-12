@@ -2,7 +2,7 @@
 <html>
 <meta lang="eng" charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="css/style.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 <script defer src="node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
@@ -11,7 +11,7 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico"/>
 </head>
 <body>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
     <header class="home">
         <!-- Nav Bar -->
         <nav class="nav-container">
@@ -41,14 +41,18 @@
                 <h1>Welcome!</h1>
                 <p>I have some awesome things to show you...</p>
                 <div class=landing-button-container>
-                    <a href="#" class="landing-button"><span>Read My Blog</span></a>
-                    <a href="#" class="landing-button"><span>Learn More About Me</span></a>
+                    <a href="#section-hider-1" class="landing-button" id="read-blog"><span>Read My Blog</span></a>
+                    <a href="#home-intro" class="landing-button"><span>Learn More About Me</span></a>
                 </div>
             </div>
+            <figure style="height: 100%">
+                <img src="images/me-wife.jpg" alt="Shell and I" style="height: 100%; border-radius: 50%;">
+                <figcaption style="color:white"><i>My wife and I</i></figcaption>
+            </figure>
         </div>
         <div class="more-info-container">
             <div class="more-info">
-                <a href="#"><div class="arrow-container"><i class="fas fa-arrow-down arrow"></i></div><div><span>The Purpose of This Blog</span></div></a>
+                <a href="#home-intro"><div class="arrow-container"><i class="fas fa-arrow-down arrow"></i></div><div><span>The Purpose of This Blog</span></div></a>
             </div>
         </div>
     </header>
@@ -98,9 +102,11 @@
             </article>
         </section>
         <section class="container">
-            <div class="section-hider">
+            <div class="section-hider-1" id="section-hider-1">
                 <h1>Recent Blog Posts</h1>
-                <div id="section-arrow" class="icon-container"><i id="icon" class="fas fa-angle-right"></i></div>
+                <div id="section-arrow-1" class="icon-container">
+                    <i id="icon" class="fas fa-angle-right"></i>
+                </div>
             </div>
             <div id="recent-posts">
                 <div class="home-grid">
@@ -157,21 +163,29 @@
         </section>
         <br>
         <section id="Video" class="container">
-            <h1>My Favorite Video</h1>
-            <p>My favorite super hero of all time is Spider-Man. Lately I have been
-                super interested in the music from the movies and I found this mashup
-                created by Samuel Kim, which I think is super cool! Check it out!
-            </p>
-            <div style="text-align: center">
-                <iframe 
-                    width="560" 
-                    height="315" 
-                    src="https://www.youtube.com/embed/5YFq7xgeEwQ" 
-                    title="YouTube video player" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-                </iframe>
+            <div class="section-hider-2" id="section-hider-2">
+                <h1>My Favorite Video</h1>
+                <div id="section-arrow-2" class="icon-container">
+                    <i id="icon" class="fas fa-angle-right"></i>
+                </div>
+            </div>
+            <div id="video" class="fav-video">
+                <p>
+                    My favorite super hero of all time is Spider-Man. Lately I have been
+                    super interested in the music from the movies and I found this mashup
+                    created by Samuel Kim, which I think is super cool! Check it out!
+                </p>
+                <div style="text-align: center">
+                    <iframe 
+                        width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/5YFq7xgeEwQ" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
             </div>
         </section>
     </main>
