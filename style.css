@@ -253,8 +253,8 @@ footer {
     cursor: pointer;
 }
 
-.hide-section {
-    display: none;
+.show-section {
+    display: block;
 }
 /*---------------------------------------------*/
 
@@ -305,6 +305,10 @@ cursor: pointer;
 /* ----------------------------------- */
 
 /* Home Grid/Recent Blog Posts */
+.recent-posts {
+    display: none;
+}
+
 .home-grid {
     display: grid;
     max-width: 1100px;
