@@ -205,19 +205,17 @@ footer {
 }
 
 .more-info a{
-    /* margin: 0 2% 0 0; */
     display: flex;
     flex-direction: row;
-    width: 100%;
-    /* justify-content: center; */
+    width: 25%;
     align-items: center;
 }
 
-.more-info:hover .arrow{
+.more-info a:hover .arrow{
     color: black;
 }
 
-.more-info:hover .arrow-container {
+.more-info a:hover .arrow-container {
     background-color: white;
 }
 
@@ -229,6 +227,29 @@ footer {
     color: white;
 }
 
+
+.section-hider {
+    display: flex;
+    flex-direction: row;
+    width: inherit;
+    justify-content: space-between
+
+}
+
+.icon-container svg{
+    width: 50px;
+    height: 50px;
+}
+
+.fa-angle-right {
+    position: relative;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /*---------------------------------------------*/
 
 /* Modal */
