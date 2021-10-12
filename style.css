@@ -305,7 +305,7 @@ cursor: pointer;
 /* ----------------------------------- */
 
 /* Home Grid/Recent Blog Posts */
-.recent-posts {
+#recent-posts {
     display: none;
 }
 
