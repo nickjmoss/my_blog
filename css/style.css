@@ -618,6 +618,10 @@ svg {
     .noScroll {
         overflow: hidden;
     }
+
+    .mobile-menu a{
+        font-size: 2.0rem;
+    }
     /* ---------------------------------- */
     /* LANDING PAGE STYLING */
     .landing-container {
