@@ -100,13 +100,33 @@ footer {
 }
 
 .logo {
-    font-size: 20px;
     margin: auto 10px auto 0px;
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    align-items: center;
 }
 
-.logo a{
+.logo img{
+    border-radius: 50%;
+    width: 90%;
+    align-self: center;
+}
+
+.logo #title{
     text-decoration: none;
     color: white;
+    padding-left: 5%;
+    display: flex;
+    font-size: 1.25rem;
+}
+
+.logo #logo{
+    text-decoration: none;
+    color: white;
+    padding-left: 5%;
+    display: flex;
+    font-size: 1.25rem;
 }
 
 .menu {
@@ -426,9 +446,9 @@ footer {
     justify-content: space-around;
     padding: 0px 15px;
     border: 1px solid black;
-    border-radius: 10%;
     box-shadow: 5px 5px gray;
     margin: 5px auto;
+    border-radius: 10px;
 }
 
 
@@ -539,6 +559,7 @@ svg {
     left: 0;
     height: 25px;
     width: 45px;
+    /* fill: white; */
 }
 
 .instagram:hover {
@@ -707,6 +728,21 @@ svg {
     svg {
         width: 50px;
         height: 33px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .logo img {
+        display: none;
+    }
+
+    .logo #title {
+        padding-left: 0;
+    }
+
+    .logo {
+        display: block;
+        width: 100%;
     }
 }
 /* Mobile Styling */
