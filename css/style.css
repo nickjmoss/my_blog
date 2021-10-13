@@ -597,6 +597,10 @@ svg {
     .links, a{
         text-decoration: none;
     }
+
+    .container {
+        padding: 0 30px;
+    }
     /* --------------------------------- */
     /* MOBILE MENU STYLING */
     .mobile-menu-button {
@@ -625,6 +629,19 @@ svg {
     }
     .landing-button-container {
         justify-content: center;
+    }
+
+    .landing-intro {
+        padding: 0 30px;
+    }
+
+    .landing-intro h1 {
+        font-size: 3.0rem;
+        align-self: center;
+    }
+
+    .landing-intro p {
+        align-self: center;
     }
 
     .more-info {
@@ -684,8 +701,8 @@ svg {
     }
 
     svg {
-        width: 60px;
-        height: 40px
+        width: 50px;
+        height: 33px;
     }
 }
 /* Mobile Styling */
