@@ -363,7 +363,8 @@ footer {
 /*---------------------------------------------*/
 /* SECTION HIDER STYLING */
 .section-hider-1,
-.section-hider-2 {
+.section-hider-2,
+.section-hider-3 {
     display: flex;
     flex-direction: row;
     width: inherit;
@@ -375,12 +376,14 @@ footer {
 
 
 .section-hider-1:hover,
-.section-hider-2:hover {
+.section-hider-2:hover,
+.section-hider-3:hover {
     background-color: lightgray;
 }
 
 .section-hider-1 h1,
-.section-hider-2 h1 {
+.section-hider-2 h1,
+.section-hider-3 h1 {
     margin: 0;
 }
 
@@ -407,7 +410,8 @@ footer {
 }
 
 #section-arrow-1.rotate,
-#section-arrow-2.rotate {
+#section-arrow-2.rotate,
+#section-arrow-3.rotate {
     transition: all 0.3s;
     transform: rotate(90deg);
 }
@@ -417,6 +421,14 @@ footer {
 }
 
 #recent-posts.hideShow {
+    display: block;
+}
+
+#contact-section {
+    display: none;
+}
+
+#contact-section.hideShow {
     display: block;
 }
 
