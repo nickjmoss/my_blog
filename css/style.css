@@ -587,11 +587,11 @@ svg {
 @media only screen and (max-width: 768px) {
     /* GENERAL STYLING */
     body{
-        font-size: 1.6rem;
+        font-size: 1.0rem;
     }
 
     h1, h2, h3 {
-        font-size: 1.3em;
+        font-size: 1.3rem;
     }
 
     .links, a{
@@ -644,6 +644,11 @@ svg {
         display:none;
     }
 
+    .arrow-container {
+        width: 45px;
+        height: 45px;
+    }
+
     /* ---------------------------------- */
 
     /* RECENT BLOG POSTS STYLING */
@@ -658,16 +663,12 @@ svg {
         display: none;
     }
     /* ---------------------------------- */
+    /* FOOTER STYLING */
     .footer-grid {
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding: 5%;
-    }
-
-    .arrow-container {
-        width: 45px;
-        height: 45px;
     }
 
     .footer-menu {
@@ -686,9 +687,6 @@ svg {
         width: 60px;
         height: 40px
     }
-    
-    
-
 }
 /* Mobile Styling */
 /* @media only screen and (max-width: 900px) {
