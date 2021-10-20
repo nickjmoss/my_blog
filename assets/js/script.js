@@ -52,4 +52,21 @@ document.addEventListener("DOMContentLoaded", function() {
         
     }
     getGithubRepos();
+
+    function getGithubInfo() {
+        let url = "https://api.github.com/users/nickjmoss"
+        const fetchPromise = fetch(url);
+        fetchPromise.then(response => {
+            return response.json();
+        }).then(data => {
+            let profilePic = data.avatar_url;
+            let bio = data.bio;
+            let link = data.html_url;
+
+            document.getElementById("github-img").src = profilePic
+            document.getElementById("github-bio").innerHTML = bio
+            document.getElementById("github-link").href = link;
+        })
+    }
+    getGithubInfo();
 })

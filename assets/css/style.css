@@ -375,8 +375,8 @@ footer {
     display: grid;
     max-width: 1100px;
     grid-template-columns: repeat(3, 1fr);
-    justify-content: stretch;
     grid-gap: 50px;
+    justify-content: stretch;
 }
 
 .grid-item{
@@ -761,55 +761,6 @@ svg {
         width: 100%;
     }
 }
-/* Mobile Styling */
-/* @media only screen and (max-width: 900px) {
-    body{
-        font-size: 1.6rem;
-    }
-
-    h1, h2, h3 {
-        font-size: 1.3em;
-    }
-
-    header{
-        padding: 15px;
-    }
-
-    section .container {
-        padding: 15px;
-    }
-
-    footer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .home-grid {
-        display: flex;
-        flex-direction: column;
-    }
-    .menu {
-        display: none;
-    }
-
-    .mobile-menu-button {
-        display: block;
-    }
-
-    .links{
-        display: inline;
-        text-decoration: underline;
-    }
-
-    .links:after {
-        all: initial;
-    }
-
-    .links:hover:after {
-        all: initial;
-    }
-} */
 
 @font-face {
     font-family: "montserrat";

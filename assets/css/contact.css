@@ -1,0 +1,63 @@
+.profile-pic {
+    border-radius: 50%;
+    width: 40%;
+    align-self: center;
+}
+
+.github-info,
+.twitter-info,
+.instagram-info{
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s linear;
+    padding: 1% 5%;
+}
+
+.grid-item {
+    position: relative;
+    padding: 0;
+    cursor: pointer;
+    height: 95%;
+    /* width: 95%; */
+}
+
+.github-cover,
+.twitter-cover,
+.instagram-cover {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+    width: 100%;
+    font-size: 7rem;
+    transition: all 0.5s linear;
+    position: absolute;
+    justify-content: center;
+}
+
+#contact-item-3:hover .github-info,
+#contact-item-2:hover .twitter-info,
+#contact-item-1:hover .instagram-info{
+    visibility: visible;
+    opacity: 1;
+}
+
+#contact-item-3:hover .github-cover,
+#contact-item-2:hover .twitter-cover,
+#contact-item-1:hover .instagram-cover{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.fa-twitter {
+    color: #55ACEE;
+}
+
+.fa-instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

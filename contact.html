@@ -3,10 +3,11 @@
 <meta lang="eng" charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="assets/css/style.css"/>
+<link rel="stylesheet" href="assets/css/contact.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <script defer src="node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
 <head>
-    <title>Nick J Moss | My Projects</title>
+    <title>Nick J Moss | Contact Me</title>
     <link rel="icon" type="image/x-icon" href="assets/images/logo-square-small.png"/>
 </head>
 <body>
@@ -21,9 +22,9 @@
                 <ul class="menu">
                     <li class="menu-item"><a class="links" href='#'>Blog</a></li>
                     <li class="menu-item"><a class="links" href='#'>My Setup</a></li>
-                    <li class="menu-item"><a class="links" href='#'>My Projects</a></li>
+                    <li class="menu-item"><a class="links" href='projects.html'>My Projects</a></li>
                     <li class="menu-item"><a class="links" href='#'>About</a></li>
-                    <li class="menu-item"><a class="links" href='contact.html'>Contact</a></li>
+                    <li class="menu-item"><a class="links" href='#'>Contact</a></li>
                 </ul>
             </div>
             <!-- Mobile Menu Button -->
@@ -48,140 +49,69 @@
         </div>
     </div>
     <main>
-        <h1 align="center">My Projects</h1>
         <section class="container">
+            <h1 align="center">Contact Me</h1>
             <p>
-                As I am learning and practicing my skills as a 
-                full-stack developer, I will be working on projects
-                and I will have them featured here with status updates
-                on how they are coming along.
+                If you want to contact me whether it be for questions or comments, you can reach me through
+                all the mediums that I have listed below. Don't hesitate to reach out to me and I will get
+                back to you as soon as I can. If you would like to see what I am up to, I post regular updates
+                on my Twitter and you can always check out my blog!
             </p>
         </section>
         <section class="container">
-            <div>
-                <h2>Featured Projects</h2>
-                <div class="home-grid">
-                    <div class="grid-item" id="project-item-1">
-                        <div>
-                            <h3>Title</h3>
-                            <span>Language</span>
-                            <p>
-                                Description
-                            </p>
-                        </div>
-                        <div id="repo-link-container">
-                            <a class = links href="#" target="_blank"><strong>Go</strong></a>
-                        </div>
-                    </div>
-                    <div class="grid-item" id="project-item-2">
-                        <div>
-                            <h3>Title</h3>
-                            <span>Language</span>
-                            <p>
-                                Description
-                            </p>
-                        </div>
-                        <div id="repo-link-container">
-                            <a class = links href="#" target="_blank"><strong>Go</strong></a>
-                        </div>
-                    </div>
-                    <div class="grid-item" id="project-item-3">
-                        <div>
-                            <h3>Title</h3>
-                            <span>Language</span>
-                            <p>
-                                Description
-                            </p>
-                        </div>
-                        <div id="repo-link-container">
-                            <a class = links href="#" target="_blank"><strong>Go</strong></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <br>
-        <section class="container">
-            <h2>What I Am Currently Working On</h2>
-            <div class="timeline-container">
-                <!-- Left vertical line -->
-                <div class="container__line"></div>
-            
-                <!-- The timeline items container -->
-                <ul class="container__items">
-                    <li class="container__item">
-                        <!-- The circle and title -->
-                        <div class="container__top">
-                            <!-- The circle -->
-                            <div class="container__circle"></div>
-            
-                            <!-- The title -->
-                            <div class="container__title">
-                                <h3 class="timeline-title">Major Progress</h3>
+            <div class="home-grid">
+                <a id="instagram-link" href="" target="_blank">
+                    <div class="grid-item" id="contact-item-1" style="position: relative">
+                        <div class="instagram-info">
+                            <div>
+                                <h3>Instagram</h3>
+                                <img class="profile-pic" id="instagram-img" src="">
+                                <p id="instagram-bio">
+                                    Description
+                                </p>
                             </div>
                         </div>
-            
-                        <!-- The description -->
-                        <div class="container__desc">
-                            <p>
-                                I have finally been able to connect to the GitHub
-                                API and display my GitHub info on my blog. All of 
-                                my recent projects on my GitHub will be displayed
-                                here on this page. Now I am just working on using
-                                Twitter's API to display my most recent tweets here
-                                on my blog.
-                            </p>
+                        <div class="instagram-cover">
+                            <i class="fab fa-instagram"></i>
                         </div>
-                    </li>
-                    <li class="container__item">
-                        <!-- The circle and title -->
-                        <div class="container__top">
-                            <!-- The circle -->
-                            <div class="container__circle"></div>
-            
-                            <!-- The title -->
-                            <div class="container__title">
-                                <h3 class="timeline-title">Blog...</h3>
+                    </div>
+                </a>
+                <a id="twitter-link" href="" target="_blank">
+                    <div class="grid-item" id="contact-item-2" style="position: relative">
+                        <div class="twitter-info">
+                            <div>
+                                <h3>Twitter</h3>
+                                <img class="profile-pic" id="twitter-img" src="">
+                                <p id="twitter-bio">
+                                    Description
+                                </p>
                             </div>
                         </div>
-            
-                        <!-- The description -->
-                        <div class="container__desc">
-                            <p>
-                                The progress of my website/blog is coming along
-                                and I am learning so much along the way. The homepage
-                                is about 90% done and my projects page is progressing
-                                as well.
-                            </p>
+                        <div class="twitter-cover">
+                            <i class="fab fa-twitter"></i>
                         </div>
-                    </li>
-                    <!-- Each timeline item -->
-                    <li class="container__item">
-                        <!-- The circle and title -->
-                        <div class="container__top">
-                            <!-- The circle -->
-                            <div class="container__circle"></div>
-            
-                            <!-- The title -->
-                            <div class="container__title">
-                                <h3 class="timeline-title">Welcome</h3>
+                    </div>
+                </a>
+                <a id="github-link" href="" target="_blank">
+                    <div class="grid-item" id="contact-item-3" style="position: relative">
+                        <div class="github-info">
+                            <div>
+                                <h3>GitHub</h3>
+                                <img class="profile-pic" id="github-img" src="">
+                                <p id="github-bio">
+                                    Description
+                                </p>
                             </div>
                         </div>
-            
-                        <!-- The description -->
-                        <div class="container__desc">
-                            <p>
-                                Hello! I am so glad to have you here on my website. This
-                                is the project timeline. Here I will be posting all updates
-                                related to my projects whether they be personal or work 
-                                related.
-                            </p>
+                        <div class="github-cover">
+                            <i class="fab fa-github"></i>
                         </div>
-                    </li>
-                </ul>
+                    </div>
+                </a>
             </div>
         </section>
     </main>
+    <br>
     <footer>
         <div class="footer-grid">
             <div class="footer-menu">
