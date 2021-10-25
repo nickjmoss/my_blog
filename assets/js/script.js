@@ -70,18 +70,4 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     getGithubInfo();
 
-    var myHeaders = new Headers();
-    myHeaders.append("Authorization", "Bearer AAAAAAAAAAAAAAAAAAAAAMstVAEAAAAAK1YZqW5btS4DtF9RbYfyzSih4Sc%3D5oI83JYwD1EStGZ7W7MBuM14YFDWnZizpyXXpIjMLRAaCWEeJf");
-    myHeaders.append("Cookie", "guest_id=v1%3A163465117710369443; personalization_id=\"v1_HFfS8810LPDNKiyHMXxPxg==\"");
-
-    var requestOptions = {
-    method: 'GET',
-    headers: myHeaders,
-    redirect: 'follow'
-    };
-
-    fetch("https://api.twitter.com/2/users/by/username/_nickjmoss", requestOptions)
-    .then(response => response.text())
-    .then(result => console.log(result))
-    .catch(error => console.log('error', error));
-})
+});
