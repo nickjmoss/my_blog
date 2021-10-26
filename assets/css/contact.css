@@ -21,6 +21,10 @@
     color: #0321c4;
 }
 
+.fab:hover {
+    opacity: 1;
+}
+
 #icon {
     position: relative;
     width: 13%;
@@ -28,7 +32,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .social-cards-container {
@@ -36,7 +40,7 @@
     flex-direction: column;
     overflow: hidden;
     height: 900px;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 2rem;
 }
 
@@ -51,7 +55,7 @@
     width: 95%;
     height: 15%;
     align-self: center;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .social-card h3 {
@@ -67,3 +71,19 @@
     font-size: 3.5rem;
 }
 
+@media only screen and (max-width: 768px){
+    #icon {
+        padding: 20px;
+    }
+
+    .social-card p {
+        margin: 0;
+        font-size: 0.85rem;
+        padding-right: 3px;
+    }
+
+    .social-cards-container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
