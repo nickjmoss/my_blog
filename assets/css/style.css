@@ -50,6 +50,7 @@ footer {
     display: inline-block;
     position: relative;
     color: black;
+    cursor: pointer;
 }
 
 .links:after {
@@ -152,6 +153,7 @@ footer {
 
 .menu-item {
     padding: 5px 10px;
+    cursor: pointer;
 }
 
 .menu .links {

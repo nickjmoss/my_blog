@@ -26,5 +26,16 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById("github-link").href = link;
         })
     }
-
+    let darkMode = false;
+    $('#dark-mode-button').click(function() {
+        if (darkMode == true) {
+            $("link[rel='stylesheet'][href$='dark-mode.css']").remove();
+            darkMode = false;
+        }
+        else{
+            $("<link rel='stylesheet' href='assets/css/dark-mode.css'>").insertAfter("#light-mode");
+            darkMode = true;
+        }
+    });
 });
+

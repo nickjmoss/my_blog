@@ -1,0 +1,62 @@
+#me {
+    max-width: 100%;
+    min-width: 40%;
+    border-radius: 50%;
+}
+
+.about-intro {
+    color: white;
+    min-width: 60%;
+    padding: 0px 5%;
+}
+
+.about-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-intro-container {
+    max-width: 1000px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20vh auto;
+    padding: 0px 50px;
+}
+
+.more-info-container {
+    padding-top: 0;
+}
+
+.more-info-container span {
+    font-size: 1.5rem;
+}
+
+.article-right {
+    float: right;
+    width: 50%;
+    padding: 0 0 0 3%;
+}
+
+.article-right:after {
+    content: "My first static webpage";
+    color: gray;
+    font-style: italic;
+}
+
+@media only screen and (max-width: 768px) {
+    .about-intro-container {
+        flex-direction: column;
+        margin-top: 10%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5%;
+    }
+
+    #me {
+        max-width: 50%;
+    }
+}
