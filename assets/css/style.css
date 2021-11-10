@@ -1,3 +1,18 @@
+/* 
+
+CHANGES:
+* I made changes to my menu bar to only include the pages that I have
+created so far.
+* I added a toggle for my light and dark theme to the menu bar and configured
+it for mobile devices as well.
+* I fixed the modal for the mobile menu so it works perfectly now.
+* Each section of my website is now its own page, accessible through the menu
+bar. These pages continues with the theme of the website.
+* My Projects page uses a GitHub API to pull my 3 most recent projects
+from my GitHub and displays the project's name, the language they are written in and
+a short description of the project.
+
+*/
 /* Root Styling */
 :root {
     font-family: "montserrat";

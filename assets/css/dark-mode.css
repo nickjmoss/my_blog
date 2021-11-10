@@ -1,3 +1,23 @@
+/* 
+
+CHANGES:
+* I created a light and dark theme with my website, along with some layout
+and animation changes:
+    - The background image for the landing page, about page, and menu bar 
+    is different when the theme is changed.
+    - The layout of the landing page welcome message is different.
+    - The animation for when a link is hovered over is different.
+    - The font changes for the whole site.
+    - The background color and font color change to reflect a dark mode
+    feel.
+    - The theme toggle changes icons depending on which theme is selected.
+    - The grid on the home page turns into just a flex box showing 3 recent
+    blog posts instead of 6 inside a grid.
+    - By using Local Storage, when the page is reloaded or when you navigate
+    to a different page on the website, the theme is preserved.
+
+*/
+
 :root {
     background-color: rgb(34, 34, 34);
     color: white;
@@ -99,6 +119,17 @@ strong {
 
 .landing-container {
     justify-content: center;
+}
+/* Home Grid Styling */
+.home-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#grid-item-4, #grid-item-5, #grid-item-6 {
+    display: none;
 }
 /* ----------------------------- */
 
