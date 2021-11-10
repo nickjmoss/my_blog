@@ -2,12 +2,21 @@
 <html>
 <meta lang="eng" charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="assets/css/style.css"/>
-<link rel="stylesheet" href="assets/css/about.css"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <head>
     <title>Nick J Moss | About Me</title>
     <link rel="icon" type="image/x-icon" href="assets/images/logo-square-small.png"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="assets/css/about.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        function setTheme() {
+            let onpageLoad = localStorage.getItem("theme") || "";
+            if (onpageLoad == 'dark') {
+                $("<link rel='stylesheet' href='assets/css/dark-mode.css'>").appendTo("head");
+            }
+        } setTheme();
+    </script>
 </head>
 <body>
     <script src="assets/js/script.js"></script>
@@ -19,13 +28,23 @@
             </div>
             <div class="menu-item-container">
                 <ul class="menu">
-                    <li class="menu-item"><a class="links" href='#'>Blog</a></li>
-                    <li class="menu-item"><a class="links" href='#'>My Setup</a></li>
+                    <!-- <li class="menu-item"><a class="links" href='#'>Blog</a></li>
+                    <li class="menu-item"><a class="links" href='#'>My Setup</a></li> -->
                     <li class="menu-item"><a class="links" href='projects.html'>My Projects</a></li>
-                    <li class="menu-item"><a class="links" href='#'>About</a></li>
+                    <li class="menu-item"><a class="links" href='about.html'>About</a></li>
                     <li class="menu-item"><a class="links" href='contact.html'>Contact</a></li>
+                    <li class="menu-item" id="dark-mode-button"><div class="theme-toggle"><i id="theme-icon" class="far fa-sun"></i></div></li>
                 </ul>
             </div>
+            <script>
+                function setThemeIcon() {
+                    let onpageLoad = localStorage.getItem("theme") || "";
+                    if (onpageLoad == 'dark') {
+                        $('#theme-icon').removeClass()
+                        $('#theme-icon').addClass('far fa-moon')
+                    }
+                } setThemeIcon();
+            </script>
             <!-- Mobile Menu Button -->
             <div class="mobile-menu-button">
                 <div class="menu-icon" id="menu-icon">
@@ -57,10 +76,10 @@
     <div class="menu-modal-container" id="modal">
         <div class="mobile-links">
             <ul class="mobile-menu">
-                <li><a href='#'>Blog</a></li>
-                <li><a href='#'>My Setup</a></li>
+                <li><a href='index.html'>Home</a></li>
+                <!-- <li><a href='#'>My Setup</a></li> -->
                 <li><a href='projects.html'>My Projects</a></li>
-                <li><a href='#'>About</a></li>
+                <li><a href='about.html'>About</a></li>
                 <li><a href='contact.html'>Contact</a></li>
             </ul>
         </div>
@@ -150,19 +169,19 @@
                 <h3>Sitemap</h3>
                 <ul>
                     <li><a class="links" href="#">Home</a></li>
-                    <li><a class="links" href="#">Blog</a></li>
-                    <li><a class="links" href="#">My Setup</a></li>
-                    <li><a class="links" href="#">My Projects</a></li>
-                    <li><a class="links" href="#">About</a></li>
-                    <li><a class="links" href="#">Contact</a></li>
+                    <!-- <li><a class="links" href="#">Blog</a></li>
+                    <li><a class="links" href="#">My Setup</a></li> -->
+                    <li><a class="links" href="projects.html">My Projects</a></li>
+                    <li><a class="links" href="about.html">About</a></li>
+                    <li><a class="links" href="contact.html">Contact</a></li>
                 </ul>
             </div>
             <div class="contact">
                 <h3>Contact Nick</h3>
                 <ul>
-                    <li><a class="links" href="#">Contact Page</a></li>
+                    <li><a class="links" href="contact.html">Contact Page</a></li>
                     <li><a class="links" href="mailto:j.mailing000@gmail.com">Send Nick an Email</a></li>
-                    <li><a class="links" href="#">Social Media</a></li>
+                    <li><a class="links" href="contact.html">Social Media</a></li>
                 </ul>
             </div>
             <div class="general">

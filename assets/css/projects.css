@@ -12,7 +12,7 @@
 
 .container__line {
     /* Border */
-    border-right: 2px solid rgb(51, 51, 253);
+    border-right: 2px solid rgb(90, 51, 253);
 
     /* Positioned at the left */
     left: 15px;
@@ -43,7 +43,7 @@
 
 .container__circle {
     /* Rounded border */
-    background-color: rgb(51, 51, 253);
+    background-color: rgb(90, 51, 253);
     border-radius: 9999px;
 
     /* Size */

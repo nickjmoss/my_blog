@@ -26,15 +26,20 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById("github-link").href = link;
         })
     }
-    let darkMode = false;
+
     $('#dark-mode-button').click(function() {
-        if (darkMode == true) {
+        if (localStorage.getItem('theme') == 'dark') {
             $("link[rel='stylesheet'][href$='dark-mode.css']").remove();
-            darkMode = false;
+            localStorage.setItem('theme', '')
+            $('#theme-icon').removeClass()
+            $('#theme-icon').addClass('far fa-sun')
+
         }
         else{
             $("<link rel='stylesheet' href='assets/css/dark-mode.css'>").appendTo("head");
-            darkMode = true;
+            localStorage.setItem('theme', 'dark')
+            $('#theme-icon').removeClass()
+            $('#theme-icon').addClass('far fa-moon')
         }
     });
 });

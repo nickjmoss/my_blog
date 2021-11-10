@@ -46,6 +46,10 @@ footer {
     justify-content: center;
 }
 
+.simple-links {
+    text-decoration: underline;
+}
+
 .links{
     display: inline-block;
     position: relative;
@@ -600,8 +604,17 @@ svg {
         display: flex;
     }
 
-    .menu-item-container {
+    .menu li:nth-child(1),
+    .menu li:nth-child(2),
+    .menu li:nth-child(3){
         display: none;
+    }
+
+    .menu {
+        justify-content: flex-end;
+        padding-top: 25px;
+        margin-top: 0;
+        padding-right: 0;
     }
 
     .activeModal {

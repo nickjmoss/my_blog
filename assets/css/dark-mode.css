@@ -1,21 +1,131 @@
 :root {
-    background-color: darkgrey;
+    background-color: rgb(34, 34, 34);
     color: white;
+    font-family: 'azeret';
+    transition: all 0.3s ease-in-out;
+}
+
+strong {
+    font-family: "azeret-bold";
 }
 
 .container {
-    background-color: darkgrey;
+    background-color: rgb(34, 34, 34);
+    transition: all 0.3s ease-in-out;
 }
 
+/*Menu Styling*/
+.fa-moon:hover {
+    background-color: white;
+    color: rgb(42,41,149);
+}
+
+.theme-toggle {
+    position: relative;
+    width: 30%;
+    font-size: 1.5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-moon {
+    border: 1px solid white;
+    padding: 100%;
+    border-radius: 50%;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.menu-modal-container {
+    background-color:rgb(34, 34, 34);
+}
+
+.mobile-menu a{
+    color: white;
+}
+
+.menu-icon.active span:nth-child(1),
+.menu-icon.active span:nth-child(2),
+.menu-icon.active span:nth-child(3) {
+    background-color: white;
+}
+
+
+/* ------------------------- */
+
+/* Contact Page */
+.social-card {
+    border-left: 10px rgb(42,41,149) solid;
+    color: white;
+    box-shadow: 2px 2px 2px 2px gray;
+}
+/* -------------- */
+
+/* Home Page */
 #index.home {
     background-image: url("../images/dark-mode-background.svg");
     background-repeat: no-repeat;
     height: 100vh;
     background-size: cover;
+    transition: all 0.3s ease-in-out;
 }
 
 #project.home {
     background-image: url("../images/dark-mode-background.svg");
     background-repeat: no-repeat;
     background-size: cover;
+    transition: all 0.3s ease-in-out;
+}
+
+.simple-links {
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.links {
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.links:after {
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.grid-item {
+    border: 1px solid white;
+}
+
+.landing-container {
+    justify-content: center;
+}
+/* ----------------------------- */
+
+/* Projects Page */
+.container_line {
+    border-right: 2px solid rgb(90,41,149);
+}
+
+.container_circle {
+    background-color: rgb(90, 36, 114);
+}
+
+
+
+/* -------------------------------- */
+
+@font-face {
+    font-family: "azeret";
+    src: url(../fonts/Azeret/AzeretMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: "azeret-bold";
+    src: url(../fonts/Azeret/AzeretMono-Bold.ttf);
+}
+
+@font-face {
+    font-family: "montserrat-italic";
+    src: url(../fonts/Azeret/AzeretMono-Italic.ttf);
 }
