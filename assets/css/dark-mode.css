@@ -11,8 +11,8 @@ and animation changes:
     - The background color and font color change to reflect a dark mode
     feel.
     - The theme toggle changes icons depending on which theme is selected.
-    - The grid on the home page turns into just a flex box showing 3 recent
-    blog posts instead of 6 inside a grid.
+    - The grid on the home page and on the my projects page turns into 
+    just a flex box showing 3 recent blog posts instead of 6 inside a grid.
     - By using Local Storage, when the page is reloaded or when you navigate
     to a different page on the website, the theme is preserved.
 
