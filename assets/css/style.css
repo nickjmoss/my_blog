@@ -164,6 +164,29 @@ footer {
     background-color: white;
 }
 
+.theme-toggle {
+    position: relative;
+    width: 30%;
+    font-size: 1.5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.fa-sun {
+    border: 1px solid white;
+    padding: 100%;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+.fa-sun:hover {
+    background-color: white;
+    color: #0321c4;
+}
+
 /* Mobile Menu */
 .mobile-menu-button {
     display: none;

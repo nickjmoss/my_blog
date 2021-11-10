@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
             darkMode = false;
         }
         else{
-            $("<link rel='stylesheet' href='assets/css/dark-mode.css'>").insertAfter("#light-mode");
+            $("<link rel='stylesheet' href='assets/css/dark-mode.css'>").appendTo("head");
             darkMode = true;
         }
     });
