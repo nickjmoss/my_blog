@@ -6,3 +6,16 @@
 .container {
     background-color: darkgrey;
 }
+
+#index.home {
+    background-image: url("../images/dark-mode-background.svg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+}
+
+#project.home {
+    background-image: url("../images/dark-mode-background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
