@@ -617,6 +617,10 @@ svg {
         padding-right: 0;
     }
 
+    .mobile-menu-button {
+        padding-left: 0;
+    }
+
     .activeModal {
         display: flex;
     }
