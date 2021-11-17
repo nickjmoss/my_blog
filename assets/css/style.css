@@ -355,7 +355,6 @@ footer {
 
 .form-close.active{
     display: flex;
-    /* padding: 0; */
 }
 
 .close-icon {
@@ -419,6 +418,7 @@ input {
     border-top: none;
     border-right: none;
     border-left: none;
+    border-radius: 0;
 }
 
 textarea {
