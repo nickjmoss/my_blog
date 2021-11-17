@@ -811,6 +811,12 @@ svg {
         padding-top: 25px;
         margin-top: 0;
         padding-right: 0;
+        padding-left: 0;
+    }
+
+    .menu-item {
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .mobile-menu-button {
@@ -827,6 +833,14 @@ svg {
 
     .mobile-menu a{
         font-size: 2.0rem;
+    }
+
+    .theme-toggle {
+        padding-right: 10%;
+    }
+
+    #login-button {
+        margin-right: 10px;
     }
 
     /* Form Styling */
