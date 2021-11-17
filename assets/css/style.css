@@ -29,6 +29,10 @@ body{
     font-size: 1.0rem;
 }
 
+.noScroll {
+    overflow: hidden;
+}
+
 a{
     text-decoration: underline 0.15em rgba(0, 0, 0, 0);
     color: black;
@@ -163,7 +167,7 @@ footer {
     align-items: center;
     list-style: none;
     background-color: transparent;
-    padding-right: 40px;
+    padding-right: 5%;
 }
 
 .menu-item-container {
@@ -191,12 +195,12 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    padding-right: 20%;
 }
 
 .fa-sun {
     border: 1px solid white;
-    padding: 100%;
+    padding: 25%;
     border-radius: 50%;
     transition: all 0.3s ease-in-out;
 }
@@ -204,6 +208,32 @@ footer {
 .fa-sun:hover {
     background-color: white;
     color: #0321c4;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#login-button {
+    margin: 0;
+    padding: 0;
+    color: white;
+    border: 1px solid white;
+    border-radius: 30px;
+    min-width: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+
+#login-button:hover {
+    background-color: white;
+    color: #0321c4;
+    transition: all 0.3s ease-in-out;
 }
 
 /* Mobile Menu */
@@ -222,6 +252,10 @@ footer {
     width: 50px;
     cursor: pointer;
     position: relative;
+}
+
+.menu-icon.hide {
+    display: none;
 }
 
 .menu-icon > span {
@@ -264,6 +298,10 @@ footer {
     z-index: 1;
 }
 
+.menu-modal-container.active {
+    display: flex;
+}
+
 .mobile-links {
     display: flex;
     flex-direction: column;
@@ -283,6 +321,137 @@ footer {
 .mobile-menu a{
     text-decoration: none;
 }
+
+/* Form Styling */
+.form-modal {
+    display: none;
+    position: fixed;
+    background-image: url("../images/background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    justify-content: center;
+    z-index: 1;
+    right: 0;
+}
+
+.form-modal.active {
+    display: flex;
+}
+
+.form-close {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    z-index: 2;
+}
+
+.form-close.active{
+    display: flex;
+    /* padding: 0; */
+}
+
+.close-icon {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: darkgray;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.form-container {
+    margin: auto;
+    border-radius: 10px;
+    width: 50%;
+    display: flex;
+    height: 80%;
+}
+
+.form-group2 {
+    width: 100%;
+    padding: 5%;
+    overflow: auto;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.input-group1 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.fname-lname {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.email {
+    display: flex;
+    flex-direction: row;
+}
+
+.address1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.address2 {
+    display: flex;
+    flex-direction: row;
+}
+
+input {
+    font-family: 'montserrat';
+    border-bottom: 1px solid black;
+    padding: 0;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+textarea {
+    font-family: "montserrat"
+}
+
+input:focus {
+    outline: none;
+}
+label {
+    padding: 0 1% 0 1%;
+}
+
+form p {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+#submit {
+    border: 1px solid #0321c4;
+    background-color: #0321c4;
+    border-radius: 30px;
+    padding: 2% 5%;
+    color: white;
+    cursor: pointer;
+}
+
+#submit:hover {
+    opacity: 0.9;
+}
+
+
+/* ---------------------------- */
 
 /* LANDING PAGE STYLING */
 .landing-container {
@@ -593,6 +762,18 @@ svg {
     .landing-button {
         margin: 5% 0;
     }
+
+    /* Form Styling */
+    .fname-lname{
+        flex-direction: column;
+    }
+
+    .fname-lname div {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    /* ------------------- */
 }
 
 /* Tablet Styling */
@@ -647,6 +828,18 @@ svg {
     .mobile-menu a{
         font-size: 2.0rem;
     }
+
+    /* Form Styling */
+    .form-modal {
+        background-image: none;
+        background-color: white;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+    
+    /* ---------------------- */
     /* ---------------------------------- */
     /* LANDING PAGE STYLING */
     .landing-container {

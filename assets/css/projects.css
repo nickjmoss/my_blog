@@ -10,7 +10,7 @@
 }
 
 .container__line {
-    border-right: 2px solid rgb(90, 51, 253);
+    border-right: 2px solid #0321c4;
     left: 15px;
     position: absolute;
     height: 97%;
@@ -33,7 +33,7 @@
 }
 
 .container__circle {
-    background-color: rgb(90, 51, 253);
+    background-color: #0321c4;
     border-radius: 9999px;
     height: 32px;
     width: 32px;

@@ -1,15 +1,29 @@
 document.addEventListener("DOMContentLoaded", function() {
-    let modal = document.getElementById("modal");
-    let button = document.getElementById("menu-icon");
-    let body = document.querySelector("body");
+    $('#menu-icon').click(function() {
+        $('#menu-icon').toggleClass('active');
+        $('#modal').toggleClass('active');
+        $('body').toggleClass('noScroll');
+    });
 
-    function toggleMenuIcon() {
-        button.classList.toggle("active");
-        modal.classList.toggle("activeModal");
-        body.classList.toggle("noScroll");
-    }
-    
-    button.addEventListener("click", toggleMenuIcon);
+    $('#login-button').click(function() {
+        $('#form').toggleClass('active')
+        $('#form-close').toggleClass('active');
+        $('body').toggleClass('noScroll');
+        $('#menu-icon').toggleClass('hide');
+    });
+
+    $('#form-close').click(function() {
+        $('#form').toggleClass('active')
+        $('#form-close').toggleClass('active');
+        $('body').toggleClass('noScroll');
+        $('input').val("");
+        $('#submit').val("Submit")
+        $('#menu-icon').toggleClass('hide');
+    });
+
+    $('#submit').click(function() {
+        $('form').submit()
+    })
 
     function getGithubInfo() {
         let url = "https://api.github.com/users/nickjmoss"
