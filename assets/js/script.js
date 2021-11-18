@@ -20,6 +20,8 @@ document.addEventListener("DOMContentLoaded", function() {
         $(':input').attr('class', '')
         $('#submit').val("Submit")
         $('#menu-icon').toggleClass('hide');
+        $(".form-group2").show()
+        $(".thanks-message").hide();
     });
 
     $('#submit').click(function() {
