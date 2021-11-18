@@ -24,6 +24,17 @@ function initValidation(formName) {
                 $(element).attr('class', '');
             }
         }
+
+        if($(element).attr('type')=='phone') {
+            let phoneNum = $(element).val()
+            let regex = $(element).attr('pattern')
+            if (phoneNum == '' || !(regex.test(phoneNum))) {
+                $(element).addClass('invalid');
+            }
+            else {
+                $(element).attr('class', '');
+            }
+        }
     }
 
     
