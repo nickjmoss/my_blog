@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
         $('#menu-icon').toggleClass('hide');
         $(".form-group2").show()
         $(".thanks-message").hide();
+        $('input[type="checkbox"]').prop('checked', false);
     });
 
     $('#submit').click(function() {
