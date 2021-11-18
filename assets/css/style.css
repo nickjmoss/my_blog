@@ -374,6 +374,14 @@ footer {
     height: 80%;
 }
 
+.thanks-message {
+    display:none;
+}
+
+.thanks-message.active{
+    display: flex;
+}
+
 .form-group2 {
     width: 100%;
     padding: 5%;
@@ -382,6 +390,10 @@ footer {
     border-radius: 10px;
     display: flex;
     justify-content: center;
+}
+
+.form-group2.hide {
+    display: none;
 }
 
 .input-group1 {
@@ -448,6 +460,14 @@ form p {
 
 #submit:hover {
     opacity: 0.9;
+}
+
+input ~ div.errMsg {
+    display:none;
+}
+
+input.invalid ~ div.errMsg {
+    display: block;
 }
 
 
