@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
         $('#form-close').toggleClass('active');
         $('body').toggleClass('noScroll');
         $('input').val("");
+        $(':input').attr('class', '')
         $('#submit').val("Submit")
         $('#menu-icon').toggleClass('hide');
     });

@@ -15,25 +15,65 @@ function initValidation(formName) {
     })
 
     function validateForm(element) {
-        if ($(element).attr('type')=='text') {
-            let elementText = $(element).val()
-            if (elementText == '') {
-                $(element).addClass('invalid');
-            }
-            else {
-                $(element).attr('class', '');
-            }
-        }
+        if ($(element).attr('required')){
 
-        if($(element).attr('type')=='phone') {
-            let phoneNum = $(element).val()
-            let regex = $(element).attr('pattern')
-            if (phoneNum == '' || !(regex.test(phoneNum))) {
-                $(element).addClass('invalid');
+            if ($(element).attr('type')=='text' || $(element).attr('type')=='address' || $(element).attr('type')=='city') {
+                let elementText = $(element).val()
+                if (elementText == '') {
+                    $(element).addClass('invalid');
+                }
+                else {
+                    $(element).attr('class', '');
+                }
             }
-            else {
-                $(element).attr('class', '');
+
+            if($(element).attr('type')=='phone') {
+                let phoneNum = $(element).val()
+                let regex = new RegExp($(element).attr('pattern'))
+                if (phoneNum == '' || !(regex.test(phoneNum))) {
+                    $(element).addClass('invalid');
+                }
+                else {
+                    $(element).attr('class', '');
+                }
             }
+
+            if($(element).attr('type')=='email') {
+                let email = $(element).val()
+                let regex = new RegExp($(element).attr('pattern'))
+                if (email == '' || !(regex.test(email))) {
+                    $(element).addClass('invalid');
+                }
+                else {
+                    $(element).attr('class', '');
+                }
+            }
+
+            if($(element).attr('type')=='state') {
+                let state = $(element).val().toUpperCase()
+                let minLength = $(element).attr('minlength');
+                let maxLength = $(element).attr('maxlength');
+
+                if (state.length < minLength || state.length > maxLength || !(stateAbbreviations.includes(state))) {
+                    console.log(state in stateAbbreviations);
+                    $(element).addClass('invalid');
+                }
+                else {
+                    $(element).attr('class', '');
+                }
+            }
+
+            if($(element).attr('type')=='zip') {
+                let zip = $(element).val()
+                let regex = new RegExp($(element).attr('pattern'))
+                if (zip == '' || !(regex.test(zip))) {
+                    $(element).addClass('invalid');
+                }
+                else {
+                    $(element).attr('class', '');
+                }
+            }
+            
         }
     }
 
