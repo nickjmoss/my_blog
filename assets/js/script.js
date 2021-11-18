@@ -49,23 +49,6 @@ $(function() {
         $('input[type="checkbox"]').prop('checked', false);
     });
 
-    // Uses GitHub API to insert info into projects page
-    function getGithubInfo() {
-        let url = "https://api.github.com/users/nickjmoss"
-        const fetchPromise = fetch(url);
-        fetchPromise.then(response => {
-            return response.json();
-        }).then(data => {
-            let profilePic = data.avatar_url;
-            let bio = data.bio;
-            let link = data.html_url;
-
-            $("#github-img").src = profilePic
-            $("#github-bio").innerHTML = bio
-            $("#github-link").href = link;
-        })
-    }
-
     // Function to initiate dark mode
     // Makes use of Local Storage to maintain the theme previously selected
     $('#dark-mode-button').click(function() {

@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {    
+$(function () {    
     // Adds most recent GitHub Repos to Featured Grid on Projects Page
     function getGithubRepos() {
         let githubApi = "https://api.github.com/users/nickjmoss/repos"
@@ -27,10 +27,13 @@ document.addEventListener("DOMContentLoaded", function () {
                     finalName = repoName.charAt(0).toUpperCase() + repoName.slice(1);
                 }
                 
-                document.getElementById(`project-item-${projectId}`).children[0].children[0].innerHTML=finalName;
-                document.getElementById(`project-item-${projectId}`).children[0].children[1].innerHTML=repoLang;
-                document.getElementById(`project-item-${projectId}`).children[0].children[2].innerHTML=repoDesc;
-                document.getElementById(`project-item-${projectId}`).children[1].children[0].href=repoLink;
+                let elementInfo = $(`#project-item-${projectId}`).children()[0]
+                let elementLink = $(`#project-item-${projectId}`).children()[1]
+
+                $(elementInfo).children()[0].innerHTML=finalName
+                $(elementInfo).children()[1].innerHTML=repoLang
+                $(elementInfo).children()[2].innerHTML=repoDesc
+                $(elementLink).children()[0].href=repoLink
 
                 projectId++;
                 
