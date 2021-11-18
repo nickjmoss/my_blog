@@ -20,6 +20,7 @@
 </head>
 <body>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/validate.js"></script>
     <header class="home" id="index">
         <!-- Nav Bar -->
         <nav class="nav-container">
@@ -58,6 +59,11 @@
                     <span class="line-3"></span>
                 </div>
             </div>
+            <div class="form-close" id="form-close">
+                <div class="close-icon" id="close-icon">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
         </nav>
         <div class="about-intro-container">
             <div class="about-image">
@@ -87,6 +93,107 @@
                 <li><a href='about.html'>About</a></li>
                 <li><a href='contact.html'>Contact</a></li>
             </ul>
+        </div>
+    </div>
+    <div class="form-modal" id="form">
+        <div class="form-container">
+            <div class="thanks-message">
+                <h1>Thank you!</h1>
+                <p>I really appreciate your feedback</p>
+                <div class="back" id="back-button">Go Back</div>
+            </div>
+            <div class="form-group2">
+                <form novalidate>
+                    <div class="input-group1">
+                        <h1 style="align-self: center;">Log Your Info</h1>
+                        <p>Contact Info</p>
+                            <div class="fname-lname">
+                                <div>
+                                    <label for="firstName">First Name</label>
+                                    <input name="firstName" type="text" id="firstName" size="20" required>
+                                    <div class="errMsg">Please enter your first name.</div>
+                                </div>
+                                <br>
+                                <div>
+                                    <label for="lastName">Last Name</label>
+                                    <input name="lastName" type="text" id="lastName" size="20" required>
+                                    <div class="errMsg">Please enter your last name.</div>
+                                </div>
+                                <br>
+                                <div>
+                                    <label for="phone">Phone Number</label>
+                                    <input name="phone" type="phone" id="phone" size="20" required pattern="\d{10}" title="Ex: 1234567890">
+                                    <div class="errMsg">Please enter your phone number.</div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="email">
+                                <div>
+                                    <label for="email">Email</label>
+                                    <input name="email" type="email" required id="email" title="me123@me.com" size="40" pattern="(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|'(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*')@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])">
+                                    <div class="errMsg">Please enter a valid email address.</div>
+                                </div>
+                            </div>
+                    </div>
+                    <br>
+                    <div class="input-group2">
+                        <p>Address Info</p>
+                        <form action="#">
+                            <div class="address1">
+                                <div>
+                                    <label for="address">Address</label>
+                                    <input name="address" type="address" id="address" size="40" required>
+                                    <div class="errMsg">Please enter your address.</div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="address2">
+                                <div>
+                                    <label for="city">City</label>
+                                    <input name="city" type="city" id="city" required>
+                                    <div class="errMsg">Please enter your city.</div>
+                                </div>
+                                <div>
+                                    <label for="state">State</label>
+                                    <input name="state" type="state" id="state" required minlength="2" maxlength="2" pattern="[A-Z]{2}" title="Ex: 'UT' or 'CA'">
+                                    <div class="errMsg">Please enter your state.</div>
+                                    <div class="errMsg">Ex: 'UT' or 'CA'.</div>
+                                </div>
+                                <div>
+                                    <label for="zip">Zip</label>
+                                    <input name="zip" type="zip" id="zip" required pattern="^\d{5}(?:[-\s]\d{4})?$" title="5 digit Zip Code">
+                                    <div class="errMsg">Please enter your</div>
+                                    <div class="errMsg">5-digit zip code.</div>
+                                </div>
+                            </div>
+                    </div>
+                    <br>
+                    <div class="input-group3">
+                        <p>How did you find this website?</p>
+                            <input name="google" id="referral" value="google" type="checkbox">
+                            <label for="google">Google</label><br>
+                            <input name="social-media" id="referral" value="social-media" type="checkbox">
+                            <label for="social-media">Social Media</label><br>
+                            <input name="github" id="referral" value="github" type="checkbox">
+                            <label for="github">GitHub</label><br>
+                            <input name="friend" id="referral" value="friend" type="checkbox">
+                            <label for="friend">Friend</label><br>
+                            <input name="other" id="referral" value="other" type="checkbox">
+                            <label for="other">Other</label><br>
+                            <div class="errMsg">You must select at least one.</div>
+                    </div>
+                    <br>
+                    <div class="input-group4">
+                        <p>Comments on the website:</p>
+                        <textarea maxlength="250" placeholder="Tell me how I can improve the site!(optional)" rows="10" cols="40"></textarea>
+                        <br>
+                        <br>
+                        <input id="submit" type="submit" value="Submit">
+                        <br>
+                        <br>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
     <main>

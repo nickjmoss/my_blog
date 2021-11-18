@@ -105,6 +105,16 @@ input {
     border: 1px solid #2b2482;
 }
 
+.thanks-message {
+    color: white;
+    background-color: black;
+}
+
+.back {
+    background-color: #2b2482;
+    border-color: #2b2482;
+}
+
 
 /* ------------------------- */
 
