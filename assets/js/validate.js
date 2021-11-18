@@ -14,6 +14,34 @@ function initValidation(formName) {
         validateForm(this);
     })
 
+    $form.submit(function(event){
+        $form = $("form");
+        formEl=$form.get(0);
+        checked = $("input[type=checkbox]:checked").length;
+    
+        event.preventDefault();  //prevent default browser submit
+        event.stopPropagation(); //stop event bubbling
+
+        if (!formEl.checkValidity()){
+            for (element of formEl) {
+                validateForm(element)
+            }
+            if(!checked) {
+                $('#referral').addClass('invalid');
+            } 
+        }
+        else{
+            if(!checked) {
+                $('#referral').addClass('invalid');
+            } 
+            else {
+                $('#referral').attr('class', '');
+                $(".form-group2").hide()
+                $(".thanks-message").show();
+            }
+        }
+    });
+
     function validateForm(element) {
         if ($(element).attr('required')){
 
