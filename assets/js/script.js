@@ -27,6 +27,7 @@ $(function() {
         $('#form-close').toggleClass('active');
         $('body').toggleClass('noScroll');
         $('input').val("");
+        $('textarea').val("");
         $(':input').attr('class', '')
         $('#submit').val("Submit")
         $('#menu-icon').toggleClass('hide');
@@ -41,6 +42,7 @@ $(function() {
         $('#form-close').toggleClass('active');
         $('body').toggleClass('noScroll');
         $('input').val("");
+        $('textarea').val("");
         $(':input').attr('class', '')
         $('#submit').val("Submit")
         $('#menu-icon').toggleClass('hide');
